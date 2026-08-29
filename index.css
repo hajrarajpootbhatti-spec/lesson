@@ -1,0 +1,522 @@
+.hero-section {
+    background-image: url("photo-1473186505569-9c61870c11f9.avif");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    color: white;
+    font-size: 20px;
+}
+
+.courses-section {
+    padding: 40px 0;
+}
+
+.courses-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+/* =========================================================
+SPEAKUP ENGLISH - PROFESSIONAL WEBSITE CSS
+Color Theme: Blue + Purple + White
+========================================================= */
+
+/* =========================
+GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f7f9fc;
+color: #20243a;
+line-height: 1.6;
+}
+
+/* =========================
+NAVBAR
+========================= */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-brand i {
+  font-size: 30px;
+  color: #6366f1;
+}
+
+.navbar-brand span {
+  font-size: 25px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover i {
+  color: #7c3aed;
+}
+
+.navbar {
+background: rgba(255, 255, 255, 0.97) !important;
+padding: 14px 5%;
+box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.navbar-brand {
+font-size: 25px;
+font-weight: 800;
+color: #4f46e5 !important;
+letter-spacing: 0.3px;
+}
+
+.navbar-brand:hover {
+color: #3730a3 !important;
+}
+
+.navbar-nav {
+margin-left: 30px;
+}
+
+.nav-link {
+color: #343a5a !important;
+font-weight: 600;
+margin: 0 6px;
+padding: 8px 12px !important;
+border-radius: 8px;
+transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+border: none;
+border-radius: 12px;
+padding: 10px;
+box-shadow: 0 10px 30px rgba(31, 41, 75, 0.12);
+}
+
+.dropdown-item {
+padding: 10px 14px;
+border-radius: 8px;
+font-weight: 500;
+transition: 0.25s ease;
+}
+
+.dropdown-item:hover {
+background: #eef0ff;
+color: #4f46e5;
+}
+
+/* Search */
+
+.navbar .form-control {
+border: 1px solid #dfe3f0;
+border-radius: 10px;
+padding: 9px 14px;
+}
+
+.navbar .form-control:focus {
+border-color: #6366f1;
+box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.btn-primary {
+background: linear-gradient(135deg, #4f46e5, #7c3aed);
+border: none;
+border-radius: 9px;
+padding: 10px 22px;
+font-weight: 600;
+box-shadow: 0 5px 15px rgba(79, 70, 229, 0.25);
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background: linear-gradient(135deg, #4338ca, #6d28d9);
+transform: translateY(-2px);
+box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+}
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero-section {
+min-height: 620px;
+position: relative;
+
+background:
+linear-gradient(
+rgba(22, 25, 65, 0.72),
+rgba(49, 35, 95, 0.78)
+),
+url("https://plus.unsplash.com/premium_photo-1683887034491-f58b4c4fca72?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+overflow: hidden;
+}
+
+/* Dark overlay */
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+
+background:
+radial-gradient(
+circle at 20% 30%,
+rgba(99, 102, 241, 0.35),
+transparent 40%
+),
+radial-gradient(
+circle at 80% 70%,
+rgba(168, 85, 247, 0.30),
+transparent 40%
+);
+}
+
+/* Hero content */
+
+.hero-content {
+position: relative;
+z-index: 2;
+max-width: 850px;
+padding: 30px;
+color: white;
+}
+
+.hero-content h1 {
+font-size: clamp(42px, 6vw, 70px);
+font-weight: 800;
+line-height: 1.1;
+margin-bottom: 20px;
+
+text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+font-size: 21px;
+margin-bottom: 30px;
+color: #f1f3ff;
+}
+
+.hero-content .btn {
+padding: 13px 30px;
+font-size: 17px;
+}
+
+/* =========================
+COURSES SECTION
+========================= */
+
+.courses-section {
+padding-top: 70px;
+padding-bottom: 35px;
+}
+
+.courses-section h2 {
+font-size: 38px;
+font-weight: 800;
+color: #25294a;
+margin-bottom: 10px;
+}
+
+.courses-section p {
+color: #727894;
+font-size: 17px;
+}
+
+/* =========================
+COURSE CARDS
+========================= */
+
+.card {
+border: none !important;
+border-radius: 18px !important;
+overflow: hidden;
+background: #ffffff;
+
+transition: all 0.35s ease;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 18px 40px rgba(43, 48, 90, 0.14) !important;
+}
+
+/* Course images */
+
+.card-img-top {
+height: 220px;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+transform: scale(1.04);
+}
+
+/* Card body */
+
+.card-body {
+padding: 25px;
+}
+
+.card-title {
+font-size: 23px;
+font-weight: 750;
+color: #272b4d;
+margin-bottom: 12px;
+}
+
+.card-text {
+color: #737990;
+min-height: 50px;
+margin-bottom: 20px;
+}
+
+/* =========================
+WHY CHOOSE US
+========================= */
+
+.container.text-center.mt-5 h2 {
+color: #25294a;
+}
+
+.container.text-center.mt-5 p {
+font-size: 16px;
+}
+
+/* Feature columns */
+
+.container.text-center.mt-4 .col-md-4 {
+background: #ffffff;
+margin-bottom: 20px;
+border-radius: 15px;
+padding: 30px !important;
+
+border: 1px solid #eef0f7;
+
+transition: 0.3s ease;
+}
+
+.container.text-center.mt-4 .col-md-4:hover {
+transform: translateY(-7px);
+border-color: #d9d8ff;
+
+box-shadow: 0 12px 30px rgba(79, 70, 229, 0.10);
+}
+
+.container.text-center.mt-4 h4 {
+color: #4f46e5;
+font-size: 21px;
+margin-bottom: 12px;
+}
+
+.container.text-center.mt-4 p {
+margin-bottom: 0;
+}
+
+/* =========================
+JOIN OUR COURSE
+========================= */
+
+.container.mt-5 .card {
+background:
+linear-gradient(
+135deg,
+#eef0ff,
+#f7f0ff
+);
+
+border: 1px solid #e3e4ff !important;
+}
+
+.container.mt-5 .card-body {
+padding: 40px 20px;
+}
+
+.container.mt-5 h2 {
+color: #25294a;
+font-weight: 800;
+margin-bottom: 12px;
+}
+
+.container.mt-5 .text-muted {
+color: #6d7188 !important;
+font-size: 17px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background:
+linear-gradient(
+135deg,
+#171b3b,
+#29205a
+) !important;
+
+border-top: 4px solid #6d5dfc;
+}
+
+footer h5 {
+font-size: 24px;
+font-weight: 800;
+margin-bottom: 10px;
+}
+
+footer p {
+color: #d9dcf2;
+}
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+.navbar {
+padding: 12px 20px;
+}
+
+.navbar-nav {
+margin-left: 0;
+margin-top: 15px;
+}
+
+.navbar .form-control {
+margin-top: 10px;
+}
+
+.navbar form {
+margin-bottom: 10px;
+}
+
+.navbar .btn {
+margin-left: 0 !important;
+}
+
+.hero-section {
+min-height: 540px;
+}
+
+.hero-content h1 {
+font-size: 45px;
+}
+
+.hero-content p {
+font-size: 18px;
+}
+}
+
+@media (max-width: 576px) {
+
+.navbar-brand {
+font-size: 21px;
+}
+
+.hero-section {
+min-height: 500px;
+}
+
+.hero-content {
+padding: 20px;
+}
+
+.hero-content h1 {
+font-size: 36px;
+}
+
+.hero-content p {
+font-size: 16px;
+}
+
+.courses-section {
+padding-top: 50px;
+}
+
+.courses-section h2 {
+font-size: 30px;
+}
+
+.card-img-top {
+height: 200px;
+}
+
+footer {
+padding-left: 15px;
+padding-right: 15px;
+}
+}
+
+/* =========================
+SMOOTH SCROLL
+========================= */
+
+html {
+scroll-behavior: smooth;
+}
+
+/* =========================
+SELECTION COLOR
+========================= */
+
+::selection {
+background: #6366f1;
+color: white;
+}

@@ -1,0 +1,473 @@
+/* =========================================================
+SPEAKUP ENGLISH - CONTACT PAGE
+Professional Blue + Purple Theme
+========================================================= */
+
+/* =========================
+GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f7f9fc;
+color: #25294a;
+line-height: 1.6;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+background: rgba(255, 255, 255, 0.98) !important;
+padding: 14px 5%;
+
+box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
+
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* Logo */
+
+.navbar-brand {
+display: flex;
+align-items: center;
+gap: 10px;
+
+text-decoration: none;
+}
+
+.navbar-brand i {
+font-size: 30px;
+color: #6366f1;
+
+transition: 0.3s ease;
+}
+
+.navbar-brand span {
+font-size: 25px;
+font-weight: 800;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover i {
+color: #7c3aed;
+transform: scale(1.08);
+}
+
+/* =========================
+NAVIGATION LINKS
+========================= */
+
+.navbar-nav {
+margin-left: 30px;
+}
+
+.nav-link {
+color: #343a5a !important;
+
+font-weight: 600;
+
+margin: 0 5px;
+
+padding: 8px 12px !important;
+
+border-radius: 8px;
+
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+.nav-link.active {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+/* =========================
+DROPDOWN
+========================= */
+
+.dropdown-menu {
+border: none;
+
+border-radius: 12px;
+
+padding: 10px;
+
+box-shadow:
+0 10px 30px rgba(31, 41, 75, 0.14);
+}
+
+.dropdown-item {
+padding: 10px 14px;
+
+border-radius: 8px;
+
+font-weight: 500;
+
+transition: 0.25s ease;
+}
+
+.dropdown-item:hover {
+background: #eef0ff;
+color: #4f46e5;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+.navbar .form-control {
+border: 1px solid #dfe3f0;
+
+border-radius: 10px;
+
+padding: 9px 14px;
+}
+
+.navbar .form-control:focus {
+border-color: #6366f1;
+
+box-shadow:
+0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+}
+
+/* Search Button */
+
+.navbar .btn-outline-success {
+color: #4f46e5;
+
+border-color: #4f46e5;
+
+border-radius: 9px;
+
+font-weight: 600;
+}
+
+.navbar .btn-outline-success:hover {
+background: #4f46e5;
+
+border-color: #4f46e5;
+
+color: white;
+}
+
+/* =========================
+PRIMARY BUTTON
+========================= */
+
+.btn-primary {
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+border: none;
+
+border-radius: 10px;
+
+padding: 11px 25px;
+
+font-weight: 600;
+
+box-shadow:
+0 6px 18px rgba(79, 70, 229, 0.25);
+
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background: linear-gradient(
+135deg,
+#4338ca,
+#6d28d9
+);
+
+transform: translateY(-2px);
+
+box-shadow:
+0 9px 22px rgba(79, 70, 229, 0.35);
+}
+
+/* =========================
+CONTACT HEADING
+========================= */
+
+#contact {
+padding-top: 25px;
+padding-bottom: 10px;
+}
+
+#contact h2 {
+color: #25294a;
+
+font-size: 42px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+/* Gradient underline */
+
+#contact h2::after {
+content: "";
+
+display: block;
+
+width: 65px;
+height: 4px;
+
+margin: 15px auto 0;
+
+border-radius: 10px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+#contact p {
+color: #747991 !important;
+
+font-size: 17px;
+
+margin-top: 15px;
+}
+
+/* =========================
+CONTACT FORM CONTAINER
+========================= */
+
+#contact + .container {
+max-width: 850px;
+
+background: white;
+
+padding: 40px;
+
+border-radius: 20px;
+
+box-shadow:
+0 12px 35px rgba(31, 41, 75, 0.09);
+
+border: 1px solid #eef0f7;
+}
+
+/* =========================
+FORM LABELS
+========================= */
+
+.form-label {
+color: #303550;
+
+font-weight: 650;
+
+margin-bottom: 8px;
+}
+
+/* =========================
+INPUTS
+========================= */
+
+.form-control,
+.form-select {
+border: 1px solid #dfe3f0;
+
+border-radius: 10px;
+
+padding: 12px 15px;
+
+color: #343850;
+
+background: #fbfcff;
+
+transition: all 0.3s ease;
+}
+
+/* Input focus */
+
+.form-control:focus,
+.form-select:focus {
+border-color: #6366f1;
+
+background: white;
+
+box-shadow:
+0 0 0 0.2rem rgba(99, 102, 241, 0.13);
+}
+
+/* Placeholder */
+
+.form-control::placeholder {
+color: #a0a5b8;
+}
+
+/* =========================
+TEXTAREA
+========================= */
+
+textarea.form-control {
+min-height: 130px;
+
+resize: vertical;
+}
+
+/* =========================
+SEND MESSAGE BUTTON
+========================= */
+
+#contact + .container .btn-primary {
+min-width: 160px;
+
+padding: 12px 25px;
+
+margin-top: 5px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background:
+linear-gradient(
+135deg,
+#171b3b,
+#29205a
+) !important;
+
+border-top: 4px solid #6d5dfc;
+}
+
+footer h5 {
+font-size: 24px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+footer p {
+color: #d9dcf2;
+}
+
+footer p:last-child {
+font-size: 14px;
+
+color: #aeb3d0;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+.navbar {
+padding: 12px 20px;
+}
+
+.navbar-nav {
+margin-left: 0;
+margin-top: 15px;
+}
+
+.navbar form {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.navbar .btn-primary {
+margin-left: 0 !important;
+}
+
+#contact + .container {
+max-width: 90%;
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+.navbar-brand i {
+font-size: 25px;
+}
+
+.navbar-brand span {
+font-size: 21px;
+}
+
+#contact {
+padding-top: 15px;
+}
+
+#contact h2 {
+font-size: 32px;
+}
+
+#contact p {
+font-size: 16px;
+}
+
+#contact + .container {
+max-width: 92%;
+
+```
+padding: 25px 20px;
+
+border-radius: 16px;
+```
+
+}
+
+.form-control,
+.form-select {
+padding: 11px 13px;
+}
+
+#contact + .container .btn-primary {
+width: 100%;
+}
+
+}
+
+/* =========================
+TEXT SELECTION
+========================= */
+
+::selection {
+background: #6366f1;
+color: white;
+}

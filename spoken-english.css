@@ -1,0 +1,645 @@
+/* =========================================================
+SPEAKUP ENGLISH - SPOKEN ENGLISH PAGE
+Professional Blue + Purple Theme
+========================================================= */
+
+/* =========================
+GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f7f9fc;
+color: #25294a;
+line-height: 1.6;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+background: rgba(255, 255, 255, 0.98) !important;
+
+padding: 14px 5%;
+
+box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
+
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* =========================
+LOGO
+========================= */
+
+.navbar-brand {
+display: flex;
+align-items: center;
+gap: 10px;
+
+text-decoration: none;
+}
+
+.navbar-brand i {
+font-size: 30px;
+
+color: #6366f1;
+
+transition: 0.3s ease;
+}
+
+.navbar-brand span {
+font-size: 25px;
+
+font-weight: 800;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover i {
+color: #7c3aed;
+
+transform: scale(1.08);
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navbar-nav {
+margin-left: 30px;
+}
+
+.nav-link {
+color: #343a5a !important;
+
+font-weight: 600;
+
+margin: 0 5px;
+
+padding: 8px 12px !important;
+
+border-radius: 8px;
+
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #4f46e5 !important;
+
+background: #eef0ff;
+}
+
+.nav-link.active {
+color: #4f46e5 !important;
+
+background: #eef0ff;
+}
+
+/* =========================
+DROPDOWN
+========================= */
+
+.dropdown-menu {
+border: none;
+
+border-radius: 12px;
+
+padding: 10px;
+
+box-shadow:
+0 10px 30px rgba(31, 41, 75, 0.14);
+}
+
+.dropdown-item {
+padding: 10px 14px;
+
+border-radius: 8px;
+
+font-weight: 500;
+
+transition: 0.25s ease;
+}
+
+.dropdown-item:hover {
+background: #eef0ff;
+
+color: #4f46e5;
+}
+
+.dropdown-item.active {
+background: #4f46e5;
+
+color: white;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+.navbar .form-control {
+border: 1px solid #dfe3f0;
+
+border-radius: 10px;
+
+padding: 9px 14px;
+
+transition: 0.3s ease;
+}
+
+.navbar .form-control:focus {
+border-color: #6366f1;
+
+box-shadow:
+0 0 0 0.2rem rgba(99, 102, 241, 0.13);
+}
+
+/* Search Button */
+
+.navbar .btn-outline-success {
+color: #4f46e5;
+
+border-color: #4f46e5;
+
+border-radius: 9px;
+
+font-weight: 600;
+
+transition: 0.3s ease;
+}
+
+.navbar .btn-outline-success:hover {
+background: #4f46e5;
+
+border-color: #4f46e5;
+
+color: white;
+}
+
+/* =========================
+PRIMARY BUTTON
+========================= */
+
+.btn-primary {
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+border: none;
+
+border-radius: 10px;
+
+padding: 11px 25px;
+
+font-weight: 600;
+
+box-shadow:
+0 6px 18px rgba(79, 70, 229, 0.25);
+
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background: linear-gradient(
+135deg,
+#4338ca,
+#6d28d9
+);
+
+transform: translateY(-2px);
+
+box-shadow:
+0 9px 22px rgba(79, 70, 229, 0.35);
+}
+
+/* =========================
+MAIN PAGE HEADING
+========================= */
+
+.container.mt-5 > .text-center h1 {
+font-size: 46px;
+
+font-weight: 800;
+
+color: #25294a;
+
+margin-bottom: 15px;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Heading Line */
+
+.container.mt-5 > .text-center h1::after {
+content: "";
+
+display: block;
+
+width: 70px;
+
+height: 4px;
+
+margin: 15px auto 0;
+
+border-radius: 10px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Subtitle */
+
+.container.mt-5 > .text-center .lead {
+color: #747991;
+
+font-size: 18px;
+
+margin-top: 18px;
+}
+
+/* =========================
+COURSE FEATURE CARDS
+========================= */
+
+.container.mt-5 .row.mt-5 {
+margin-top: 45px !important;
+}
+
+.container.mt-5 .row.mt-5 .card {
+border: none;
+
+border-radius: 18px;
+
+background: white;
+
+overflow: hidden;
+
+min-height: 225px;
+
+box-shadow:
+0 10px 30px rgba(31, 41, 75, 0.08) !important;
+
+transition: all 0.35s ease;
+
+position: relative;
+}
+
+/* Gradient Top */
+
+.container.mt-5 .row.mt-5 .card::before {
+content: "";
+
+display: block;
+
+height: 5px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Card Hover */
+
+.container.mt-5 .row.mt-5 .card:hover {
+transform: translateY(-10px);
+
+box-shadow:
+0 18px 40px rgba(79, 70, 229, 0.15) !important;
+}
+
+/* Card Body */
+
+.container.mt-5 .row.mt-5 .card-body {
+padding: 35px 25px;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: center;
+}
+
+/* Card Title */
+
+.container.mt-5 .row.mt-5 .card-title {
+color: #4f46e5;
+
+font-size: 21px;
+
+font-weight: 800;
+
+margin-bottom: 15px;
+
+transition: 0.3s ease;
+}
+
+.container.mt-5 .row.mt-5 .card:hover .card-title {
+color: #7c3aed;
+}
+
+/* Card Title Icon */
+
+.container.mt-5 .row.mt-5 .card-title::before {
+content: "✓";
+
+display: inline-flex;
+
+align-items: center;
+
+justify-content: center;
+
+width: 32px;
+
+height: 32px;
+
+margin-right: 9px;
+
+border-radius: 50%;
+
+color: white;
+
+font-size: 15px;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Card Text */
+
+.container.mt-5 .row.mt-5 .card-text {
+color: #70758b;
+
+font-size: 16px;
+
+line-height: 1.7;
+
+margin-bottom: 0;
+}
+
+/* =========================
+PRACTICE / CTA SECTION
+========================= */
+
+.container.mt-5 .card.shadow {
+border: none;
+
+border-radius: 20px;
+
+background:
+linear-gradient(
+135deg,
+#eef0ff,
+#f7efff
+);
+
+box-shadow:
+0 12px 35px rgba(79, 70, 229, 0.09) !important;
+
+overflow: hidden;
+
+position: relative;
+}
+
+/* CTA Top Border */
+
+.container.mt-5 .card.shadow::before {
+content: "";
+
+display: block;
+
+height: 5px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* CTA Body */
+
+.container.mt-5 .card.shadow .card-body {
+padding: 45px 25px;
+}
+
+/* CTA Heading */
+
+.container.mt-5 .card.shadow .card-title {
+color: #25294a;
+
+font-size: 30px;
+
+font-weight: 800;
+
+margin-bottom: 12px;
+}
+
+/* CTA Text */
+
+.container.mt-5 .card.shadow .card-text {
+color: #70758b;
+
+font-size: 17px;
+
+margin-bottom: 25px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background:
+linear-gradient(
+135deg,
+#171b3b,
+#29205a
+) !important;
+
+border-top: 4px solid #6d5dfc;
+}
+
+footer h5 {
+font-size: 24px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+footer p {
+color: #d9dcf2;
+}
+
+footer p:last-child {
+font-size: 14px;
+
+color: #aeb3d0;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+.navbar {
+padding: 12px 20px;
+}
+
+.navbar-nav {
+margin-left: 0;
+
+```
+margin-top: 15px;
+```
+
+}
+
+.navbar form {
+margin-top: 10px;
+
+```
+margin-bottom: 10px;
+```
+
+}
+
+.navbar .btn-primary {
+margin-left: 0 !important;
+
+```
+margin-top: 5px;
+```
+
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+.container.mt-5 {
+padding-left: 20px;
+
+```
+padding-right: 20px;
+```
+
+}
+
+.container.mt-5 > .text-center h1 {
+font-size: 36px;
+}
+
+.container.mt-5 > .text-center .lead {
+font-size: 16px;
+}
+
+.container.mt-5 .row.mt-5 {
+margin-top: 30px !important;
+}
+
+.container.mt-5 .card.shadow .card-title {
+font-size: 26px;
+}
+
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+.navbar-brand i {
+font-size: 25px;
+}
+
+.navbar-brand span {
+font-size: 21px;
+}
+
+.container.mt-5 > .text-center h1 {
+font-size: 30px;
+}
+
+.container.mt-5 > .text-center .lead {
+font-size: 15px;
+}
+
+.container.mt-5 .row.mt-5 .card-body {
+padding: 30px 20px;
+}
+
+.container.mt-5 .row.mt-5 .card-title {
+font-size: 19px;
+}
+
+.container.mt-5 .row.mt-5 .card-text {
+font-size: 15px;
+}
+
+.container.mt-5 .card.shadow .card-body {
+padding: 35px 20px;
+}
+
+.container.mt-5 .card.shadow .card-title {
+font-size: 23px;
+}
+
+.container.mt-5 .card.shadow .card-text {
+font-size: 15px;
+}
+
+}
+
+/* =========================
+TEXT SELECTION
+========================= */
+
+::selection {
+background: #6366f1;
+color: white;
+}

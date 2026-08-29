@@ -1,0 +1,656 @@
+/* =========================================================
+SPEAKUP ENGLISH - BASIC ENGLISH COURSE
+Professional Blue + Purple Theme
+========================================================= */
+
+/* =========================
+GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f7f9fc;
+color: #25294a;
+line-height: 1.6;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+background: rgba(255, 255, 255, 0.98) !important;
+padding: 14px 5%;
+
+box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
+
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* Website Logo */
+
+.navbar-brand {
+display: flex;
+align-items: center;
+gap: 10px;
+
+text-decoration: none;
+}
+
+.navbar-brand i {
+font-size: 30px;
+color: #6366f1;
+
+transition: 0.3s ease;
+}
+
+.navbar-brand span {
+font-size: 25px;
+font-weight: 800;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover i {
+color: #7c3aed;
+transform: scale(1.08);
+}
+
+/* =========================
+NAVBAR LINKS
+========================= */
+
+.navbar-nav {
+margin-left: 30px;
+}
+
+.nav-link {
+color: #343a5a !important;
+
+font-weight: 600;
+
+margin: 0 5px;
+
+padding: 8px 12px !important;
+
+border-radius: 8px;
+
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+.nav-link.active {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+/* =========================
+DROPDOWN
+========================= */
+
+.dropdown-menu {
+border: none;
+border-radius: 12px;
+
+padding: 10px;
+
+box-shadow:
+0 10px 30px rgba(31, 41, 75, 0.14);
+}
+
+.dropdown-item {
+padding: 10px 14px;
+
+border-radius: 8px;
+
+font-weight: 500;
+
+transition: 0.25s ease;
+}
+
+.dropdown-item:hover {
+background: #eef0ff;
+color: #4f46e5;
+}
+
+.dropdown-item.active {
+background: #4f46e5;
+color: white;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+.navbar .form-control {
+border: 1px solid #dfe3f0;
+
+border-radius: 10px;
+
+padding: 9px 14px;
+}
+
+.navbar .form-control:focus {
+border-color: #6366f1;
+
+box-shadow:
+0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+}
+
+/* Search Button */
+
+.navbar .btn-outline-success {
+color: #4f46e5;
+
+border-color: #4f46e5;
+
+border-radius: 9px;
+
+font-weight: 600;
+}
+
+.navbar .btn-outline-success:hover {
+background: #4f46e5;
+
+border-color: #4f46e5;
+
+color: white;
+}
+
+/* =========================
+PRIMARY BUTTON
+========================= */
+
+.btn-primary {
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+border: none;
+
+border-radius: 10px;
+
+padding: 11px 25px;
+
+font-weight: 600;
+
+box-shadow:
+0 6px 18px rgba(79, 70, 229, 0.25);
+
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background: linear-gradient(
+135deg,
+#4338ca,
+#6d28d9
+);
+
+transform: translateY(-2px);
+
+box-shadow:
+0 9px 22px rgba(79, 70, 229, 0.35);
+}
+
+/* =========================
+COURSE INTRO SECTION
+========================= */
+
+.container.mt-5:first-of-type {
+padding-top: 30px;
+padding-bottom: 25px;
+}
+
+/* Main Heading */
+
+.container.mt-5:first-of-type h1 {
+color: #25294a;
+
+font-size: 48px;
+
+font-weight: 800;
+
+line-height: 1.2;
+
+margin-bottom: 20px;
+}
+
+/* Heading Gradient */
+
+.container.mt-5:first-of-type h1 {
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Course Description */
+
+.container.mt-5:first-of-type .lead {
+color: #6d7188;
+
+font-size: 18px;
+
+line-height: 1.8;
+
+max-width: 570px;
+
+margin-bottom: 25px;
+}
+
+/* =========================
+WHAT YOU WILL LEARN CARD
+========================= */
+
+.container.mt-5:first-of-type .card {
+border: none;
+
+border-radius: 18px;
+
+background: white;
+
+overflow: hidden;
+
+box-shadow:
+0 12px 35px rgba(31, 41, 75, 0.10) !important;
+
+transition: all 0.35s ease;
+}
+
+.container.mt-5:first-of-type .card:hover {
+transform: translateY(-6px);
+
+box-shadow:
+0 18px 40px rgba(79, 70, 229, 0.15) !important;
+}
+
+/* Card Top Line */
+
+.container.mt-5:first-of-type .card::before {
+content: "";
+
+display: block;
+
+height: 5px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Card Body */
+
+.container.mt-5:first-of-type .card-body {
+padding: 30px;
+}
+
+/* Card Heading */
+
+.container.mt-5:first-of-type .card-title {
+color: #4f46e5;
+
+font-size: 24px;
+
+font-weight: 800;
+
+margin-bottom: 20px;
+}
+
+/* =========================
+LIST GROUP
+========================= */
+
+.list-group {
+border-radius: 12px;
+overflow: hidden;
+}
+
+.list-group-item {
+border: none;
+
+border-bottom: 1px solid #eef0f6;
+
+padding: 15px 16px;
+
+color: #555b73;
+
+font-weight: 500;
+
+background: #fafbff;
+
+transition: all 0.25s ease;
+}
+
+.list-group-item:last-child {
+border-bottom: none;
+}
+
+.list-group-item:hover {
+background: #eef0ff;
+
+color: #4f46e5;
+
+padding-left: 22px;
+}
+
+/* Add check icon style using first letter decoration */
+
+.list-group-item::before {
+content: "✓";
+
+color: #6366f1;
+
+font-weight: 800;
+
+margin-right: 10px;
+}
+
+/* =========================
+COURSE DETAILS
+========================= */
+
+.container.mt-5:nth-of-type(2) {
+padding-top: 20px;
+}
+
+/* Heading */
+
+.container.mt-5:nth-of-type(2) h2 {
+color: #25294a;
+
+font-size: 36px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+.container.mt-5:nth-of-type(2) > p {
+color: #747991 !important;
+
+font-size: 16px;
+}
+
+/* =========================
+DETAIL CARDS
+========================= */
+
+.container.mt-5:nth-of-type(2) .card {
+border: none;
+
+border-radius: 16px;
+
+background: white;
+
+overflow: hidden;
+
+transition: all 0.35s ease;
+}
+
+.container.mt-5:nth-of-type(2) .card:hover {
+transform: translateY(-8px);
+
+box-shadow:
+0 16px 35px rgba(79, 70, 229, 0.13) !important;
+}
+
+/* Card Top Border */
+
+.container.mt-5:nth-of-type(2) .card::before {
+content: "";
+
+display: block;
+
+height: 4px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Details Card Body */
+
+.container.mt-5:nth-of-type(2) .card-body {
+padding: 30px 20px;
+}
+
+/* Detail Titles */
+
+.container.mt-5:nth-of-type(2) .card-title {
+color: #4f46e5;
+
+font-weight: 750;
+
+font-size: 20px;
+
+margin-bottom: 12px;
+}
+
+/* Detail Text */
+
+.container.mt-5:nth-of-type(2) .card-text {
+color: #555b73;
+
+font-size: 18px;
+
+font-weight: 600;
+
+margin-bottom: 0;
+}
+
+/* =========================
+ENROLLMENT SECTION
+========================= */
+
+.container.text-center.mt-5.mb-5 .card {
+border: none;
+
+border-radius: 20px;
+
+background:
+linear-gradient(
+135deg,
+#eef0ff,
+#f7efff
+);
+
+box-shadow:
+0 12px 35px rgba(79, 70, 229, 0.08) !important;
+}
+
+.container.text-center.mt-5.mb-5 .card-body {
+padding: 45px 25px;
+}
+
+/* Enrollment Heading */
+
+.container.text-center.mt-5.mb-5 h2 {
+color: #25294a;
+
+font-size: 32px;
+
+font-weight: 800;
+
+margin-bottom: 12px;
+}
+
+/* Enrollment Text */
+
+.container.text-center.mt-5.mb-5 .card-text {
+color: #6d7188;
+
+font-size: 17px;
+
+margin-bottom: 25px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background:
+linear-gradient(
+135deg,
+#171b3b,
+#29205a
+) !important;
+
+border-top: 4px solid #6d5dfc;
+}
+
+footer h5 {
+font-size: 24px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+footer p {
+color: #d9dcf2;
+}
+
+footer p:last-child {
+font-size: 14px;
+
+color: #aeb3d0;
+}
+
+/* =========================
+RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+.navbar {
+padding: 12px 20px;
+}
+
+.navbar-nav {
+margin-left: 0;
+margin-top: 15px;
+}
+
+.navbar form {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.navbar .btn-primary {
+margin-left: 0 !important;
+}
+
+.container.mt-5:first-of-type h1 {
+font-size: 40px;
+}
+
+}
+
+/* =========================
+RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+.container.mt-5:first-of-type {
+text-align: center;
+}
+
+.container.mt-5:first-of-type .lead {
+margin-left: auto;
+margin-right: auto;
+}
+
+.container.mt-5:first-of-type .btn {
+margin-bottom: 25px;
+}
+
+.container.mt-5:first-of-type .card {
+text-align: left;
+}
+
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+.navbar-brand i {
+font-size: 25px;
+}
+
+.navbar-brand span {
+font-size: 21px;
+}
+
+.container.mt-5:first-of-type h1 {
+font-size: 34px;
+}
+
+.container.mt-5:first-of-type .lead {
+font-size: 16px;
+}
+
+.container.mt-5:first-of-type .card-body {
+padding: 22px;
+}
+
+.container.mt-5:nth-of-type(2) h2 {
+font-size: 30px;
+}
+
+.container.text-center.mt-5.mb-5 h2 {
+font-size: 27px;
+}
+
+.container.text-center.mt-5.mb-5 .card-body {
+padding: 35px 20px;
+}
+
+}
+
+/* =========================
+TEXT SELECTION
+========================= */
+
+::selection {
+background: #6366f1;
+color: white;
+}

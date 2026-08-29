@@ -1,0 +1,658 @@
+/* =========================================================
+SPEAKUP ENGLISH - REGISTRATION PAGE
+Professional Blue + Purple Theme
+========================================================= */
+
+/* =========================
+GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f7f9fc;
+color: #25294a;
+line-height: 1.6;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+background: rgba(255, 255, 255, 0.98) !important;
+padding: 14px 5%;
+
+box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
+
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+/* Logo */
+
+.navbar-brand {
+display: flex;
+align-items: center;
+gap: 10px;
+text-decoration: none;
+}
+
+.navbar-brand i {
+font-size: 30px;
+color: #6366f1;
+transition: 0.3s ease;
+}
+
+.navbar-brand span {
+font-size: 25px;
+font-weight: 800;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover i {
+color: #7c3aed;
+transform: scale(1.08);
+}
+
+/* =========================
+NAVIGATION LINKS
+========================= */
+
+.navbar-nav {
+margin-left: 30px;
+}
+
+.nav-link {
+color: #343a5a !important;
+
+font-weight: 600;
+
+margin: 0 5px;
+
+padding: 8px 12px !important;
+
+border-radius: 8px;
+
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+.nav-link.active {
+color: #4f46e5 !important;
+background: #eef0ff;
+}
+
+/* =========================
+DROPDOWN
+========================= */
+
+.dropdown-menu {
+border: none;
+border-radius: 12px;
+padding: 10px;
+
+box-shadow:
+0 10px 30px rgba(31, 41, 75, 0.14);
+}
+
+.dropdown-item {
+padding: 10px 14px;
+border-radius: 8px;
+
+font-weight: 500;
+
+transition: 0.25s ease;
+}
+
+.dropdown-item:hover {
+background: #eef0ff;
+color: #4f46e5;
+}
+
+/* =========================
+PRIMARY BUTTON
+========================= */
+
+.btn-primary {
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+border: none;
+
+border-radius: 10px;
+
+padding: 11px 25px;
+
+font-weight: 600;
+
+box-shadow:
+0 6px 18px rgba(79, 70, 229, 0.25);
+
+transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+background: linear-gradient(
+135deg,
+#4338ca,
+#6d28d9
+);
+
+transform: translateY(-2px);
+
+box-shadow:
+0 9px 22px rgba(79, 70, 229, 0.35);
+}
+
+/* =========================
+REGISTRATION CONTAINER
+========================= */
+
+.container.mt-5.mb-5 {
+max-width: 850px;
+}
+
+/* =========================
+PAGE HEADING
+========================= */
+
+.container.mt-5.mb-5 > .text-center h1 {
+font-size: 42px;
+
+font-weight: 800;
+
+color: #25294a;
+
+margin-bottom: 12px;
+
+background: linear-gradient(
+135deg,
+#4f46e5,
+#7c3aed
+);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Heading Underline */
+
+.container.mt-5.mb-5 > .text-center h1::after {
+content: "";
+
+display: block;
+
+width: 70px;
+height: 4px;
+
+margin: 15px auto 0;
+
+border-radius: 10px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+.container.mt-5.mb-5 > .text-center p {
+color: #747991 !important;
+
+font-size: 17px;
+
+margin-top: 15px;
+}
+
+/* =========================
+REGISTRATION CARD
+========================= */
+
+.container.mt-5.mb-5 > .card:first-of-type {
+border: none;
+
+border-radius: 20px;
+
+background: white;
+
+overflow: hidden;
+
+box-shadow:
+0 15px 40px rgba(31, 41, 75, 0.10) !important;
+
+position: relative;
+}
+
+/* Top Gradient Line */
+
+.container.mt-5.mb-5 > .card:first-of-type::before {
+content: "";
+
+display: block;
+
+height: 5px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Card Body */
+
+.container.mt-5.mb-5 > .card:first-of-type .card-body {
+padding: 35px;
+}
+
+/* =========================
+FORM LABELS
+========================= */
+
+.form-label {
+color: #303550;
+
+font-weight: 650;
+
+margin-bottom: 8px;
+}
+
+/* =========================
+INPUTS
+========================= */
+
+.form-control,
+.form-select {
+border: 1px solid #dfe3f0;
+
+border-radius: 10px;
+
+padding: 12px 15px;
+
+color: #343850;
+
+background: #fbfcff;
+
+transition: all 0.3s ease;
+}
+
+/* Focus */
+
+.form-control:focus,
+.form-select:focus {
+border-color: #6366f1;
+
+background: white;
+
+box-shadow:
+0 0 0 0.2rem rgba(99, 102, 241, 0.13);
+}
+
+/* Placeholder */
+
+.form-control::placeholder {
+color: #a0a5b8;
+}
+
+/* Textarea */
+
+textarea.form-control {
+resize: vertical;
+
+min-height: 120px;
+}
+
+/* =========================
+FORM BUTTON
+========================= */
+
+#registrationForm .btn-primary {
+min-width: 150px;
+
+margin-top: 5px;
+}
+
+/* =========================
+COURSE INFORMATION CARD
+========================= */
+
+.container.mt-5.mb-5 > .card:last-child {
+border: none;
+
+border-radius: 20px;
+
+background:
+linear-gradient(
+135deg,
+#eef0ff,
+#f7efff
+);
+
+box-shadow:
+0 12px 35px rgba(79, 70, 229, 0.08) !important;
+
+overflow: hidden;
+
+position: relative;
+}
+
+/* Top Border */
+
+.container.mt-5.mb-5 > .card:last-child::before {
+content: "";
+
+display: block;
+
+height: 5px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Course Info Body */
+
+.container.mt-5.mb-5 > .card:last-child .card-body {
+padding: 35px;
+}
+
+/* Course Heading */
+
+.container.mt-5.mb-5 > .card:last-child h3 {
+color: #4f46e5;
+
+font-size: 28px;
+
+font-weight: 800;
+
+margin-bottom: 22px;
+}
+
+/* Course Information Text */
+
+.container.mt-5.mb-5 > .card:last-child p {
+color: #555b73;
+
+font-size: 16px;
+
+margin-bottom: 10px;
+}
+
+.container.mt-5.mb-5 > .card:last-child strong {
+color: #303550;
+}
+
+/* =========================
+PAYMENT DETAILS
+========================= */
+
+body > .card.shadow.mt-4 {
+max-width: 850px;
+
+margin-left: auto;
+margin-right: auto;
+
+margin-bottom: 60px;
+
+border: none;
+
+border-radius: 20px;
+
+background: white;
+
+overflow: hidden;
+
+box-shadow:
+0 15px 40px rgba(31, 41, 75, 0.10) !important;
+
+position: relative;
+}
+
+/* Payment Top Line */
+
+body > .card.shadow.mt-4::before {
+content: "";
+
+display: block;
+
+height: 5px;
+
+background: linear-gradient(
+90deg,
+#4f46e5,
+#7c3aed
+);
+}
+
+/* Payment Body */
+
+body > .card.shadow.mt-4 .card-body {
+padding: 35px;
+}
+
+/* Payment Heading */
+
+body > .card.shadow.mt-4 h3 {
+color: #4f46e5;
+
+font-size: 28px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+}
+
+/* Payment Text */
+
+body > .card.shadow.mt-4 p {
+color: #555b73;
+
+margin-bottom: 12px;
+}
+
+body > .card.shadow.mt-4 strong {
+color: #303550;
+}
+
+/* Horizontal Lines */
+
+body > .card.shadow.mt-4 hr {
+border: none;
+
+height: 1px;
+
+background: #e5e7f0;
+
+margin: 20px 0;
+}
+
+/* WhatsApp Button */
+
+body > .card.shadow.mt-4 .btn-success {
+background: #25d366;
+
+border: none;
+
+border-radius: 10px;
+
+padding: 12px 24px;
+
+font-weight: 600;
+
+transition: all 0.3s ease;
+}
+
+body > .card.shadow.mt-4 .btn-success:hover {
+background: #1ebe5d;
+
+transform: translateY(-2px);
+
+box-shadow:
+0 7px 18px rgba(37, 211, 102, 0.25);
+}
+
+/* =========================
+MOBILE NAVBAR
+========================= */
+
+@media (max-width: 991px) {
+
+.navbar {
+padding: 12px 20px;
+}
+
+.navbar-nav {
+margin-left: 0;
+
+```
+margin-top: 15px;
+```
+
+}
+
+.navbar .btn-primary {
+margin-left: 0 !important;
+
+```
+margin-top: 8px;
+```
+
+}
+
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+.container.mt-5.mb-5 {
+max-width: 92%;
+}
+
+body > .card.shadow.mt-4 {
+max-width: 92%;
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+.navbar-brand i {
+font-size: 25px;
+}
+
+.navbar-brand span {
+font-size: 21px;
+}
+
+/* Heading */
+
+.container.mt-5.mb-5 > .text-center h1 {
+font-size: 31px;
+}
+
+.container.mt-5.mb-5 > .text-center p {
+font-size: 15px;
+}
+
+/* Registration Card */
+
+.container.mt-5.mb-5 > .card:first-of-type .card-body {
+padding: 25px 20px;
+}
+
+/* Course Info */
+
+.container.mt-5.mb-5 > .card:last-child .card-body {
+padding: 28px 20px;
+}
+
+.container.mt-5.mb-5 > .card:last-child h3 {
+font-size: 24px;
+}
+
+/* Payment */
+
+body > .card.shadow.mt-4 {
+max-width: 92%;
+
+```
+margin-top: 25px !important;
+
+margin-bottom: 40px;
+```
+
+}
+
+body > .card.shadow.mt-4 .card-body {
+padding: 28px 20px;
+}
+
+body > .card.shadow.mt-4 h3 {
+font-size: 24px;
+}
+
+body > .card.shadow.mt-4 .btn-success {
+width: 100%;
+
+```
+font-size: 14px;
+```
+
+}
+
+/* Form */
+
+.form-control,
+.form-select {
+padding: 11px 13px;
+}
+
+#registrationForm .btn-primary {
+width: 100%;
+}
+
+}
+
+/* =========================
+SELECTION
+========================= */
+
+::selection {
+background: #6366f1;
+color: white;
+}
