@@ -20,7 +20,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
   // Your WhatsApp number
   // Pakistan number: 03xx... ko 923xx... likhna hai
-  let myWhatsApp = "923218773604";
+  let myWhatsApp = "923172613780";
 
   // Create WhatsApp message
   let text =
