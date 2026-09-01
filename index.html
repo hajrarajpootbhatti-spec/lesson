@@ -2,160 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SpeakUp English</title>
+  <title>SpeakUp English</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css">
-
-    <style>
-        /* ====== Extra styles for search results ====== */
-        .no-results-msg {
-            transition: opacity 0.3s ease;
-        }
-        .no-results-msg.d-none {
-            display: none !important;
-        }
-
-        .course-card {
-            transition: opacity 0.3s ease, transform 0.2s ease;
-        }
-        .course-card.hidden-card {
-            display: none !important;
-        }
-
-        /* highlight search match */
-        .highlight-match {
-            background-color: #fff3a0;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-    </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
 
-    <!-- =========================
-    NAVBAR
-    ========================== -->
+  <!-- =========================
+       NAVBAR
+  ========================== -->
 
-    <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light">
 
-        <div class="container-fluid">
+    <div class="container-fluid">
 
-            <!-- Website Name -->
-            <a class="navbar-brand" href="index.html">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span>SpeakUp English</span>
+      <!-- Website Name -->
+      <a class="navbar-brand" href="index.html">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>SpeakUp English</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              Home
+            </a>
+          </li>
+
+
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+
+          <!-- Courses Dropdown -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+              Courses
+
             </a>
 
-            <!-- Mobile Menu Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-            <span class="navbar-toggler-icon"></span>
+            <ul class="dropdown-menu">
 
-        </button>
+              <li>
+                <a class="dropdown-item" href="basic-english.html">
+                  Basic English
+                </a>
+              </li>
 
+              <li>
+                <a class="dropdown-item" href="grammar.html">
+                  English Grammar
+                </a>
+              </li>
 
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <li>
+                <hr class="dropdown-divider">
+              </li>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <!-- Home -->
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">
-                        Home
-                    </a>
-                </li>
-
-
-                <!-- About -->
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">
-                        About
-                    </a>
-                </li>
-
-
-                <!-- Courses Dropdown -->
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-
-                        Courses
-
-                    </a>
-
-
-                    <ul class="dropdown-menu">
-
-                        <li>
-                            <a class="dropdown-item" href="basic-english.html">
-                                Basic English
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="grammar.html">
-                                English Grammar
-                            </a>
-                        </li>
-
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="spoken-english.html">
-                                Spoken English
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-
-                <!-- Contact -->
-                <li class="nav-item">
-                    <a class="nav-link" href="contect.html">
-                        Contact
-                    </a>
-                </li>
+              <li>
+                <a class="dropdown-item" href="spoken-english.html">
+                  Spoken English
+                </a>
+              </li>
 
             </ul>
 
+          </li>
 
 
-
-            <a href="registration.html" class="btn btn-primary ms-2">
-                Register Now
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="contect.html">
+              Contact
             </a>
+          </li>
 
-        </div>
+        </ul>
+
+
+        </form>
+        <a href="registration.html" class="btn btn-primary ms-2">
+          Register Now
+        </a>
+
+      </div>
 
     </div>
 
-</nav>
+  </nav>
 
 
 
-<!-- =========================
-HERO SECTION
-========================== -->
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
 
-<div class="hero-section">
+  <div class="hero-section">
 
     <!-- Dark Overlay -->
     <div class="hero-overlay"></div>
@@ -164,546 +139,252 @@ HERO SECTION
     <!-- Hero Content -->
     <div class="hero-content">
 
-        <h1>
-            Improve Your English Skills
-        </h1>
+      <h1>
+        Improve Your English Skills
+      </h1>
 
-        <p>
-            Learn English with confidence and speak fluently.
-        </p>
+      <p>
+        Learn English with confidence and speak fluently.
+      </p>
 
-        <a href="basic-english.html" class="btn btn-primary">
+      <a href="basic-english.html" class="btn btn-primary">
 
-            Start Learning
+        Start Learning
 
-        </a>
+      </a>
 
 
     </div>
 
-</div>
+  </div>
 
 
 
-<!-- =========================
-COURSES HEADING
-========================== -->
+  <!-- =========================
+       COURSES HEADING
+  ========================== -->
 
-<div class="container text-center courses-section">
+  <div class="container text-center courses-section">
 
     <h2>
-        Our English Courses
+      Our English Courses
     </h2>
 
     <p>
-        Choose the right course and start improving your English today.
+      Choose the right course and start improving your English today.
     </p>
 
-    <!-- Search result count / status will appear here -->
-    <div id="searchStatus" class="mt-2"></div>
+  </div>
 
-</div>
 
 
+  <!-- =========================
+       GRID & COURSES CARDS
+  ========================== -->
 
-<!-- =========================
-GRID & COURSES CARDS
-========================== -->
-
-<div class="container text-center" id="coursesContainer">
-
-    <div class="row" id="coursesRow">
-
-
-        <!-- =====================
-        CARD 1
-        ====================== -->
-
-        <div class="col-md-4 mb-4 course-card" data-course="basic english">
-
-            <div class="card shadow">
-
-                <img src="basic english course.webp" class="card-img-top" alt="Basic English Course">
-
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Basic English</h5>
-
-                    <p class="card-text">
-                        Learn English from the beginning and improve your confidence.
-                    </p>
-
-                    <a href="basic-english.html" class="btn btn-primary">
-
-                        Start Course
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =====================
-        CARD 2
-        ====================== -->
-
-        <div class="col-md-4 mb-4 course-card" data-course="english grammar">
-
-            <div class="card shadow">
-                <img src="grammer.webp" class="card-img-top" alt="English Grammar Course">
-
-
-                <div class="card-body">
-
-                    <h5 class="card-title">English Grammar</h5>
-
-                    <p class="card-text">
-                        Improve your grammar and sentence structure.
-                    </p>
-
-                    <a href="grammar.html" class="btn btn-primary">
-
-                        Start Course
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =====================
-        CARD 3
-        ====================== -->
-
-        <div class="col-md-4 mb-4 course-card" data-course="spoken english">
-
-            <div class="card shadow">
-
-                <img src="spoken.webp" class="card-img-top" alt="Spoken English Course">
-
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Spoken English</h5>
-
-                    <p class="card-text">
-                        Improve your speaking and communication skills.
-                    </p>
-
-                    <a href="spoken-english.html" class="btn btn-primary">
-
-                        Start Course
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- =====================
-        CARD 4 — BONUS (extra content to make search more interesting)
-        ====================== -->
-
-        <div class="col-md-4 mb-4 course-card" data-course="business english">
-
-            <div class="card shadow">
-
-                <img src="https://via.placeholder.com/300x200/2c3e50/ffffff?text=Business+English" class="card-img-top" alt="Business English Course">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Business English</h5>
-
-                    <p class="card-text">
-                        Master professional English for meetings, emails and presentations.
-                    </p>
-
-                    <a href="#" class="btn btn-primary">
-
-                        Start Course
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- =====================
-        CARD 5 — BONUS
-        ====================== -->
-
-        <div class="col-md-4 mb-4 course-card" data-course="ielts preparation">
-
-            <div class="card shadow">
-
-                <img src="https://via.placeholder.com/300x200/2c3e50/ffffff?text=IELTS+Prep" class="card-img-top" alt="IELTS Preparation Course">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">IELTS Preparation</h5>
-
-                    <p class="card-text">
-                        Get ready for IELTS with expert strategies and practice tests.
-                    </p>
-
-                    <a href="#" class="btn btn-primary">
-
-                        Start Course
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- =====================
-        CARD 6 — BONUS
-        ====================== -->
-
-        <div class="col-md-4 mb-4 course-card" data-course="kids english">
-
-            <div class="card shadow">
-
-                <img src="https://via.placeholder.com/300x200/2c3e50/ffffff?text=Kids+English" class="card-img-top" alt="Kids English Course">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Kids English</h5>
-
-                    <p class="card-text">
-                        Fun and interactive English lessons for young learners.
-                    </p>
-
-                    <a href="#" class="btn btn-primary">
-
-                        Start Course
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- No Results Message (hidden by default) -->
-    <div id="noResultsMsg" class="alert alert-warning mt-4 d-none no-results-msg" role="alert">
-        <i class="fa-solid fa-circle-exclamation me-2"></i>
-        No courses found matching "<span id="searchTermDisplay"></span>". Please try a different keyword.
-    </div>
-
-</div>
-
-<!-- Why Choose Us -->
-
-<div class="container text-center mt-5" id="whyChooseUs">
-
-    <h2 class="display-6 fw-bold">
-        Why Choose SpeakUp English?
-    </h2>
-
-    <p class="text-muted">
-        Learn English easily, confidently and from anywhere.
-    </p>
-
-</div>
-
-<!-- colums -->
-
-<div class="container text-center mt-4">
+  <div class="container text-center">
 
     <div class="row">
 
-        <div class="col-md-4 p-4">
-            <h4 class="fw-bold"> Easy Learning</h4>
-            <p class="text-muted">Simple lessons designed for beginners.</p>
+
+      <!-- =====================
+           CARD 1
+      ====================== -->
+
+      <div class="col-md-4 mb-4">
+
+        <div class="card shadow">
+
+          <img src="basic english course.webp" class="card-img-top" alt="Basic English Course">
+
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Basic English
+            </h5>
+
+            <p class="card-text">
+              Learn English from the beginning and improve your confidence.
+            </p>
+
+            <a href="basic-english.html" class="btn btn-primary">
+
+              Start Course
+
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="col-md-4 p-4">
-            <h4 class="fw-bold"> Learn Anywhere</h4>
-            <p class="text-muted">Learn English from the comfort of your home.</p>
+      </div>
+
+
+
+      <!-- =====================
+           CARD 2
+      ====================== -->
+
+      <div class="col-md-4 mb-4">
+
+        <div class="card shadow">
+          <img src="grammer.webp" class="card-img-top" alt="English Grammar Course">
+
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              English Grammar
+            </h5>
+
+            <p class="card-text">
+              Improve your grammar and sentence structure.
+            </p>
+
+            <a href="grammar.html" class="btn btn-primary">
+
+              Start Course
+
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="col-md-4 p-4">
-            <h4 class="fw-bold"> Build Confidence</h4>
-            <p class="text-muted">Improve your speaking and communication skills.</p>
+      </div>
+
+
+
+      <!-- =====================
+           CARD 3
+      ====================== -->
+
+      <div class="col-md-4 mb-4">
+
+        <div class="card shadow">
+
+          <img src="spoken.webp" class="card-img-top" alt="Spoken English Course">
+
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Spoken English
+            </h5>
+
+            <p class="card-text">
+              Improve your speaking and communication skills.
+            </p>
+
+            <a href="spoken-english.html" class="btn btn-primary">
+
+              Start Course
+
+            </a>
+
+          </div>
+
         </div>
+
+      </div>
+
 
     </div>
 
-</div>
+  </div>
 
-<!-- Join Our Course -->
+  <!-- Why Choose Us -->
 
-<div class="container mt-5">
+  <div class="container text-center mt-5">
+
+    <h2 class="display-6 fw-bold">
+      Why Choose SpeakUp English?
+    </h2>
+
+    <p class="text-muted">
+      Learn English easily, confidently and from anywhere.
+    </p>
+
+  </div>
+
+  <!-- colums -->
+
+  <div class="container text-center mt-4">
+
+    <div class="row">
+
+      <div class="col-md-4 p-4">
+        <h4 class="fw-bold"> Easy Learning</h4>
+        <p class="text-muted">Simple lessons designed for beginners.</p>
+      </div>
+
+      <div class="col-md-4 p-4">
+        <h4 class="fw-bold"> Learn Anywhere</h4>
+        <p class="text-muted">Learn English from the comfort of your home.</p>
+      </div>
+
+      <div class="col-md-4 p-4">
+        <h4 class="fw-bold"> Build Confidence</h4>
+        <p class="text-muted">Improve your speaking and communication skills.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Join Our Course -->
+
+  <div class="container mt-5">
 
     <div class="card shadow p-4 text-center">
 
-        <div class="card-body">
+      <div class="card-body">
 
-            <h2 class="fw-bold">
-                Ready to Improve Your English?
-            </h2>
+        <h2 class="fw-bold">
+          Ready to Improve Your English?
+        </h2>
 
-            <p class="text-muted">
-                Join SpeakUp English and start your English learning journey today.
-            </p>
+        <p class="text-muted">
+          Join SpeakUp English and start your English learning journey today.
+        </p>
 
-            <a href="contect.html" class="btn btn-primary">
-                Join Now
-            </a>
+        <a href="contect.html" class="btn btn-primary">
+          Join Now
+        </a>
 
-        </div>
+      </div>
 
     </div>
 
-</div>
+  </div>
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer class="bg-dark text-white text-center py-4 mt-5">
+  <footer class="bg-dark text-white text-center py-4 mt-5">
 
     <h5>SpeakUp English</h5>
 
     <p class="mb-1">
-        Learn English. Build Confidence. Speak Fluently.
+      Learn English. Build Confidence. Speak Fluently.
     </p>
 
     <p class="mb-0">
-        © 2026 SpeakUp English. All Rights Reserved.
+      © 2026 SpeakUp English. All Rights Reserved.
     </p>
 
-</footer>
+  </footer>
 
 
 
 
-<!-- =========================
-BOOTSTRAP JAVASCRIPT
-========================== -->
+  <!-- =========================
+       BOOTSTRAP JAVASCRIPT
+  ========================== -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-</script>
-
-
-<!-- =========================
-CUSTOM SEARCH JAVASCRIPT
-========================== -->
-
-<script>
-    (function() {
-        'use strict';
-
-        // ----- DOM refs -----
-        const searchForm = document.getElementById('searchForm');
-        const searchInput = document.getElementById('searchInput');
-        const searchBtn = document.getElementById('searchBtn');
-        const courseCards = document.querySelectorAll('.course-card');
-        const noResultsMsg = document.getElementById('noResultsMsg');
-        const searchTermDisplay = document.getElementById('searchTermDisplay');
-        const searchStatus = document.getElementById('searchStatus');
-
-        // ----- helper: clear any existing highlights -----
-        function clearHighlights() {
-            document.querySelectorAll('.highlight-match').forEach(el => {
-                // Replace the span with its text content (remove highlight)
-                const parent = el.parentNode;
-                const text = el.textContent;
-                const textNode = document.createTextNode(text);
-                parent.replaceChild(textNode, el);
-                parent.normalize();
-            });
-        }
-
-        // ----- helper: highlight search term in a text node -----
-        function highlightText(node, term) {
-            if (!node || node.nodeType !== Node.TEXT_NODE) return;
-            const text = node.textContent;
-            const lowerText = text.toLowerCase();
-            const lowerTerm = term.toLowerCase();
-            if (!lowerText.includes(lowerTerm)) return;
-
-            const frag = document.createDocumentFragment();
-            let remaining = text;
-            let idx = lowerText.indexOf(lowerTerm);
-
-            while (idx !== -1) {
-                // text before match
-                if (idx > 0) {
-                    frag.appendChild(document.createTextNode(remaining.substring(0, idx)));
-                }
-                // matched text (wrapped in span)
-                const matchSpan = document.createElement('span');
-                matchSpan.className = 'highlight-match';
-                matchSpan.textContent = remaining.substring(idx, idx + term.length);
-                frag.appendChild(matchSpan);
-                // remaining
-                remaining = remaining.substring(idx + term.length);
-                const newLower = remaining.toLowerCase();
-                idx = newLower.indexOf(lowerTerm);
-            }
-            if (remaining.length > 0) {
-                frag.appendChild(document.createTextNode(remaining));
-            }
-            node.parentNode.replaceChild(frag, node);
-        }
-
-        // ----- highlight matches in a card -----
-        function highlightCard(card, term) {
-            if (!term.trim()) return;
-            const walker = document.createTreeWalker(
-                card,
-                NodeFilter.SHOW_TEXT,
-                {
-                    acceptNode: function(node) {
-                        // skip script and style tags
-                        const parent = node.parentNode;
-                        if (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE') {
-                            return NodeFilter.FILTER_REJECT;
-                        }
-                        // skip links (we don't want to break them)
-                        if (parent.tagName === 'A') {
-                            return NodeFilter.FILTER_REJECT;
-                        }
-                        return NodeFilter.FILTER_ACCEPT;
-                    }
-                },
-                false
-            );
-
-            const nodesToProcess = [];
-            let currentNode = walker.nextNode();
-            while (currentNode) {
-                nodesToProcess.push(currentNode);
-                currentNode = walker.nextNode();
-            }
-
-            // Process in reverse so we don't invalidate the walker
-            for (let i = nodesToProcess.length - 1; i >= 0; i--) {
-                const node = nodesToProcess[i];
-                const text = node.textContent;
-                if (text.toLowerCase().includes(term.toLowerCase())) {
-                    highlightText(node, term);
-                }
-            }
-        }
-
-        // ----- perform search -----
-        function performSearch(query) {
-            const q = query.trim();
-            let visibleCount = 0;
-
-            // Clear previous highlights
-            clearHighlights();
-
-            // Reset all cards to visible first
-            courseCards.forEach(card => {
-                card.classList.remove('hidden-card');
-            });
-
-            // Hide no results message
-            noResultsMsg.classList.add('d-none');
-
-            // If query is empty, show everything and update status
-            if (q === '') {
-                searchStatus.innerHTML =
-                    '<span class="text-muted small">Showing all courses</span>';
-                // Clear highlights (already done)
-                return;
-            }
-
-            // Filter cards
-            courseCards.forEach(card => {
-                const cardData = card.getAttribute('data-course') || '';
-                const title = card.querySelector('.card-title')?.textContent || '';
-                const desc = card.querySelector('.card-text')?.textContent || '';
-                const combined = (cardData + ' ' + title + ' ' + desc).toLowerCase();
-
-                if (combined.includes(q.toLowerCase())) {
-                    card.classList.remove('hidden-card');
-                    visibleCount++;
-                    // Highlight matches within this card
-                    highlightCard(card, q);
-                } else {
-                    card.classList.add('hidden-card');
-                }
-            });
-
-            // Update status
-            if (visibleCount === 0) {
-                searchStatus.innerHTML = '';
-                noResultsMsg.classList.remove('d-none');
-                searchTermDisplay.textContent = q;
-            } else {
-                searchStatus.innerHTML =
-                    `<span class="text-success small">Found <strong>${visibleCount}</strong> course${visibleCount > 1 ? 's' : ''} matching “<strong>${q}</strong>”</span>`;
-            }
-        }
-
-        // ----- event: form submit (click search or press Enter) -----
-        searchForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            performSearch(searchInput.value);
-        });
-
-        // ----- event: real-time search on input -----
-        searchInput.addEventListener('input', function() {
-            performSearch(this.value);
-        });
-
-        // ----- event: clear search when clicking the "X" (if browser shows it) -----
-        searchInput.addEventListener('search', function() {
-            // This fires when the user clicks the native clear button (in some browsers)
-            if (this.value === '') {
-                performSearch('');
-            }
-        });
-
-        // ----- optional: if the user presses Escape, clear search -----
-        searchInput.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                this.value = '';
-                performSearch('');
-                this.blur();
-            }
-        });
-
-        // ----- initial state: show all -----
-        performSearch('');
-
-        // ----- small improvement: focus search with keyboard shortcut (Ctrl+/ or Cmd+/) -----
-        document.addEventListener('keydown', function(e) {
-            if ((e.ctrlKey || e.metaKey) && e.key === '/') {
-                e.preventDefault();
-                searchInput.focus();
-                searchInput.select();
-            }
-        });
-
-    })();
-</script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 
 </body>
 
