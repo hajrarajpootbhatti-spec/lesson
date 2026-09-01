@@ -1,473 +1,723 @@
 /* =========================================================
-SPEAKUP ENGLISH - CONTACT PAGE
-Professional Blue + Purple Theme
+   SPEAKUP ENGLISH - CONTACT PAGE
+   Professional Blue + Purple Theme + Soft Animations
 ========================================================= */
 
+
 /* =========================
-GLOBAL
+   GLOBAL
 ========================= */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-font-family: "Segoe UI", Arial, sans-serif;
-background: #f7f9fc;
-color: #25294a;
-line-height: 1.6;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f9fc;
+  color: #25294a;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
+
 /* =========================
-NAVBAR
+   PAGE LOAD ANIMATION
+========================= */
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: pageFade 0.7s ease-in-out;
+}
+
+
+/* =========================
+   NAVBAR
 ========================= */
 
 .navbar {
-background: rgba(255, 255, 255, 0.98) !important;
-padding: 14px 5%;
+  background: rgba(255, 255, 255, 0.98) !important;
+  padding: 14px 5%;
 
-box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
+  box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
 
-position: sticky;
-top: 0;
-z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  animation: navbarDown 0.8s ease;
 }
 
-/* Logo */
+@keyframes navbarDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   LOGO
+========================= */
 
 .navbar-brand {
-display: flex;
-align-items: center;
-gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-text-decoration: none;
+  text-decoration: none;
+
+  animation: logoFade 1s ease;
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .navbar-brand i {
-font-size: 30px;
-color: #6366f1;
+  font-size: 30px;
+  color: #6366f1;
 
-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar-brand span {
-font-size: 25px;
-font-weight: 800;
+  font-size: 25px;
+  font-weight: 800;
 
-background: linear-gradient(
-135deg,
-#4f46e5,
-#7c3aed
-);
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
 
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-brand:hover i {
-color: #7c3aed;
-transform: scale(1.08);
+  color: #7c3aed;
+  transform: scale(1.08) rotate(-5deg);
 }
 
+
 /* =========================
-NAVIGATION LINKS
+   NAVIGATION LINKS
 ========================= */
 
 .navbar-nav {
-margin-left: 30px;
+  margin-left: 30px;
 }
 
 .nav-link {
-color: #343a5a !important;
+  color: #343a5a !important;
 
-font-weight: 600;
+  font-weight: 600;
 
-margin: 0 5px;
+  margin: 0 5px;
 
-padding: 8px 12px !important;
+  padding: 8px 12px !important;
 
-border-radius: 8px;
+  border-radius: 8px;
 
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-color: #4f46e5 !important;
-background: #eef0ff;
+  color: #4f46e5 !important;
+
+  background: #eef0ff;
+
+  transform: translateY(-2px);
 }
 
 .nav-link.active {
-color: #4f46e5 !important;
-background: #eef0ff;
+  color: #4f46e5 !important;
+
+  background: #eef0ff;
 }
 
+
 /* =========================
-DROPDOWN
+   DROPDOWN
 ========================= */
 
 .dropdown-menu {
-border: none;
+  border: none;
 
-border-radius: 12px;
+  border-radius: 12px;
 
-padding: 10px;
+  padding: 10px;
 
-box-shadow:
-0 10px 30px rgba(31, 41, 75, 0.14);
+  box-shadow:
+    0 10px 30px rgba(31, 41, 75, 0.14);
+
+  animation: dropdownAnimation 0.25s ease;
+}
+
+@keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dropdown-item {
-padding: 10px 14px;
+  padding: 10px 14px;
 
-border-radius: 8px;
+  border-radius: 8px;
 
-font-weight: 500;
+  font-weight: 500;
 
-transition: 0.25s ease;
+  transition: 0.25s ease;
 }
 
 .dropdown-item:hover {
-background: #eef0ff;
-color: #4f46e5;
+  background: #eef0ff;
+
+  color: #4f46e5;
+
+  padding-left: 18px;
 }
 
+
 /* =========================
-SEARCH
+   SEARCH
 ========================= */
 
 .navbar .form-control {
-border: 1px solid #dfe3f0;
+  border: 1px solid #dfe3f0;
 
-border-radius: 10px;
+  border-radius: 10px;
 
-padding: 9px 14px;
+  padding: 9px 14px;
+
+  transition: all 0.3s ease;
 }
 
 .navbar .form-control:focus {
-border-color: #6366f1;
+  border-color: #6366f1;
 
-box-shadow:
-0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+  box-shadow:
+    0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+
+  transform: translateY(-1px);
 }
 
-/* Search Button */
+
+/* =========================
+   SEARCH BUTTON
+========================= */
 
 .navbar .btn-outline-success {
-color: #4f46e5;
+  color: #4f46e5;
 
-border-color: #4f46e5;
+  border-color: #4f46e5;
 
-border-radius: 9px;
+  border-radius: 9px;
 
-font-weight: 600;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
 .navbar .btn-outline-success:hover {
-background: #4f46e5;
+  background: #4f46e5;
 
-border-color: #4f46e5;
+  border-color: #4f46e5;
 
-color: white;
+  color: white;
+
+  transform: translateY(-2px);
 }
 
+
 /* =========================
-PRIMARY BUTTON
+   PRIMARY BUTTON
 ========================= */
 
 .btn-primary {
-background: linear-gradient(
-135deg,
-#4f46e5,
-#7c3aed
-);
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
 
-border: none;
+  border: none;
 
-border-radius: 10px;
+  border-radius: 10px;
 
-padding: 11px 25px;
+  padding: 11px 25px;
 
-font-weight: 600;
+  font-weight: 600;
 
-box-shadow:
-0 6px 18px rgba(79, 70, 229, 0.25);
+  box-shadow:
+    0 6px 18px rgba(79, 70, 229, 0.25);
 
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-background: linear-gradient(
-135deg,
-#4338ca,
-#6d28d9
-);
+  background: linear-gradient(
+    135deg,
+    #4338ca,
+    #6d28d9
+  );
 
-transform: translateY(-2px);
+  transform: translateY(-3px);
 
-box-shadow:
-0 9px 22px rgba(79, 70, 229, 0.35);
+  box-shadow:
+    0 9px 22px rgba(79, 70, 229, 0.35);
 }
 
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+
 /* =========================
-CONTACT HEADING
+   CONTACT HEADING
 ========================= */
 
 #contact {
-padding-top: 25px;
-padding-bottom: 10px;
+  padding-top: 25px;
+
+  padding-bottom: 10px;
+
+  animation: contactHeading 0.9s ease;
+}
+
+@keyframes contactHeading {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #contact h2 {
-color: #25294a;
+  color: #25294a;
 
-font-size: 42px;
+  font-size: 42px;
 
-font-weight: 800;
+  font-weight: 800;
 
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-/* Gradient underline */
-
-#contact h2::after {
-content: "";
-
-display: block;
-
-width: 65px;
-height: 4px;
-
-margin: 15px auto 0;
-
-border-radius: 10px;
-
-background: linear-gradient(
-90deg,
-#4f46e5,
-#7c3aed
-);
-}
-
-#contact p {
-color: #747991 !important;
-
-font-size: 17px;
-
-margin-top: 15px;
-}
 
 /* =========================
-CONTACT FORM CONTAINER
+   GRADIENT UNDERLINE
+========================= */
+
+#contact h2::after {
+  content: "";
+
+  display: block;
+
+  width: 65px;
+
+  height: 4px;
+
+  margin: 15px auto 0;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  animation: underlineGrow 0.8s ease;
+}
+
+@keyframes underlineGrow {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 65px;
+    opacity: 1;
+  }
+}
+
+
+#contact p {
+  color: #747991 !important;
+
+  font-size: 17px;
+
+  margin-top: 15px;
+}
+
+
+/* =========================
+   CONTACT FORM CONTAINER
 ========================= */
 
 #contact + .container {
-max-width: 850px;
+  max-width: 850px;
 
-background: white;
+  background: white;
 
-padding: 40px;
+  padding: 40px;
 
-border-radius: 20px;
+  border-radius: 20px;
 
-box-shadow:
-0 12px 35px rgba(31, 41, 75, 0.09);
+  box-shadow:
+    0 12px 35px rgba(31, 41, 75, 0.09);
 
-border: 1px solid #eef0f7;
+  border: 1px solid #eef0f7;
+
+  animation: formAppear 1s ease;
 }
 
+@keyframes formAppear {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* =========================
-FORM LABELS
+   FORM ROW ANIMATION
+========================= */
+
+#contact + .container .mb-3 {
+  animation: fieldAppear 0.7s ease both;
+}
+
+#contact + .container .mb-3:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+#contact + .container .mb-3:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+#contact + .container .mb-3:nth-child(3) {
+  animation-delay: 0.35s;
+}
+
+#contact + .container .mb-3:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+@keyframes fieldAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* =========================
+   FORM LABELS
 ========================= */
 
 .form-label {
-color: #303550;
+  color: #303550;
 
-font-weight: 650;
+  font-weight: 650;
 
-margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
+
 /* =========================
-INPUTS
+   INPUTS
 ========================= */
 
 .form-control,
 .form-select {
-border: 1px solid #dfe3f0;
+  border: 1px solid #dfe3f0;
 
-border-radius: 10px;
+  border-radius: 10px;
 
-padding: 12px 15px;
+  padding: 12px 15px;
 
-color: #343850;
+  color: #343850;
 
-background: #fbfcff;
+  background: #fbfcff;
 
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* Input focus */
+
+/* =========================
+   INPUT FOCUS
+========================= */
 
 .form-control:focus,
 .form-select:focus {
-border-color: #6366f1;
+  border-color: #6366f1;
 
-background: white;
+  background: white;
 
-box-shadow:
-0 0 0 0.2rem rgba(99, 102, 241, 0.13);
+  box-shadow:
+    0 0 0 0.2rem rgba(99, 102, 241, 0.13);
+
+  transform: translateY(-2px);
 }
 
-/* Placeholder */
-
-.form-control::placeholder {
-color: #a0a5b8;
-}
 
 /* =========================
-TEXTAREA
+   PLACEHOLDER
+========================= */
+
+.form-control::placeholder {
+  color: #a0a5b8;
+
+  transition: 0.3s ease;
+}
+
+.form-control:focus::placeholder {
+  opacity: 0.5;
+}
+
+
+/* =========================
+   TEXTAREA
 ========================= */
 
 textarea.form-control {
-min-height: 130px;
+  min-height: 130px;
 
-resize: vertical;
+  resize: vertical;
 }
 
+
 /* =========================
-SEND MESSAGE BUTTON
+   SEND MESSAGE BUTTON
 ========================= */
 
 #contact + .container .btn-primary {
-min-width: 160px;
+  min-width: 160px;
 
-padding: 12px 25px;
+  padding: 12px 25px;
 
-margin-top: 5px;
+  margin-top: 5px;
+
+  animation: buttonAppear 0.8s ease 0.6s both;
 }
 
+@keyframes buttonAppear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* =========================
-FOOTER
+   FOOTER
 ========================= */
 
 footer {
-background:
-linear-gradient(
-135deg,
-#171b3b,
-#29205a
-) !important;
+  background:
+    linear-gradient(
+      135deg,
+      #171b3b,
+      #29205a
+    ) !important;
 
-border-top: 4px solid #6d5dfc;
+  border-top: 4px solid #6d5dfc;
+
+  animation: footerAppear 1s ease;
+}
+
+@keyframes footerAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 footer h5 {
-font-size: 24px;
+  font-size: 24px;
 
-font-weight: 800;
+  font-weight: 800;
 
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer p {
-color: #d9dcf2;
+  color: #d9dcf2;
 }
 
 footer p:last-child {
-font-size: 14px;
+  font-size: 14px;
 
-color: #aeb3d0;
+  color: #aeb3d0;
 }
 
+
 /* =========================
-TABLET
+   TABLET
 ========================= */
 
 @media (max-width: 991px) {
 
-.navbar {
-padding: 12px 20px;
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+
+    margin-top: 15px;
+  }
+
+  .navbar form {
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .navbar .btn-primary {
+    margin-left: 0 !important;
+  }
+
+  #contact + .container {
+    max-width: 90%;
+  }
+
 }
 
-.navbar-nav {
-margin-left: 0;
-margin-top: 15px;
-}
-
-.navbar form {
-margin-top: 10px;
-margin-bottom: 10px;
-}
-
-.navbar .btn-primary {
-margin-left: 0 !important;
-}
-
-#contact + .container {
-max-width: 90%;
-}
-
-}
 
 /* =========================
-MOBILE
+   MOBILE
 ========================= */
 
 @media (max-width: 576px) {
 
-.navbar-brand i {
-font-size: 25px;
-}
+  .navbar-brand i {
+    font-size: 25px;
+  }
 
-.navbar-brand span {
-font-size: 21px;
-}
+  .navbar-brand span {
+    font-size: 21px;
+  }
 
-#contact {
-padding-top: 15px;
-}
+  #contact {
+    padding-top: 15px;
+  }
 
-#contact h2 {
-font-size: 32px;
-}
+  #contact h2 {
+    font-size: 32px;
+  }
 
-#contact p {
-font-size: 16px;
-}
+  #contact p {
+    font-size: 16px;
+  }
 
-#contact + .container {
-max-width: 92%;
+  #contact + .container {
+    max-width: 92%;
 
-```
-padding: 25px 20px;
+    padding: 25px 20px;
 
-border-radius: 16px;
-```
+    border-radius: 16px;
+  }
 
-}
+  .form-control,
+  .form-select {
+    padding: 11px 13px;
+  }
 
-.form-control,
-.form-select {
-padding: 11px 13px;
-}
-
-#contact + .container .btn-primary {
-width: 100%;
-}
+  #contact + .container .btn-primary {
+    width: 100%;
+  }
 
 }
+
 
 /* =========================
-TEXT SELECTION
+   TEXT SELECTION
 ========================= */
 
 ::selection {
-background: #6366f1;
-color: white;
+  background: #6366f1;
+
+  color: white;
+}
+
+
+/* =========================
+   REDUCE MOTION
+   Accessibility
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+
 }
