@@ -340,21 +340,6 @@ body::after {
 }
 
 
-/* =========================================================
-   SEARCH
-========================================================= */
-
-.navbar .form-control {
-
-    border: 1px solid #dfe3f0;
-
-    border-radius: 10px;
-
-    padding: 9px 14px;
-
-    transition: 0.3s ease;
-}
-
 
 .navbar .form-control:focus {
 
