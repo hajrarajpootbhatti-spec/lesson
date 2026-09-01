@@ -1,6 +1,6 @@
 /* =========================================================
 SPEAKUP ENGLISH - BASIC ENGLISH COURSE
-Professional Blue + Purple Theme
+Professional Blue + Purple Theme + Smooth Animations
 ========================================================= */
 
 /* =========================
@@ -37,6 +37,8 @@ box-shadow: 0 3px 18px rgba(31, 41, 75, 0.08);
 position: sticky;
 top: 0;
 z-index: 1000;
+
+animation: navbarSlide 0.7s ease-out;
 }
 
 /* Website Logo */
@@ -47,13 +49,15 @@ align-items: center;
 gap: 10px;
 
 text-decoration: none;
+
+transition: transform 0.3s ease;
 }
 
 .navbar-brand i {
 font-size: 30px;
 color: #6366f1;
 
-transition: 0.3s ease;
+transition: all 0.3s ease;
 }
 
 .navbar-brand span {
@@ -70,9 +74,13 @@ background: linear-gradient(
 -webkit-text-fill-color: transparent;
 }
 
+.navbar-brand:hover {
+transform: translateY(-2px);
+}
+
 .navbar-brand:hover i {
 color: #7c3aed;
-transform: scale(1.08);
+transform: rotate(-5deg) scale(1.08);
 }
 
 /* =========================
@@ -100,6 +108,8 @@ transition: all 0.3s ease;
 .nav-link:hover {
 color: #4f46e5 !important;
 background: #eef0ff;
+
+transform: translateY(-2px);
 }
 
 .nav-link.active {
@@ -119,6 +129,8 @@ padding: 10px;
 
 box-shadow:
 0 10px 30px rgba(31, 41, 75, 0.14);
+
+animation: dropdownAnimation 0.25s ease;
 }
 
 .dropdown-item {
@@ -128,12 +140,14 @@ border-radius: 8px;
 
 font-weight: 500;
 
-transition: 0.25s ease;
+transition: all 0.25s ease;
 }
 
 .dropdown-item:hover {
 background: #eef0ff;
 color: #4f46e5;
+
+transform: translateX(4px);
 }
 
 .dropdown-item.active {
@@ -151,6 +165,8 @@ border: 1px solid #dfe3f0;
 border-radius: 10px;
 
 padding: 9px 14px;
+
+transition: all 0.3s ease;
 }
 
 .navbar .form-control:focus {
@@ -158,6 +174,8 @@ border-color: #6366f1;
 
 box-shadow:
 0 0 0 0.2rem rgba(99, 102, 241, 0.15);
+
+transform: translateY(-1px);
 }
 
 /* Search Button */
@@ -170,6 +188,8 @@ border-color: #4f46e5;
 border-radius: 9px;
 
 font-weight: 600;
+
+transition: all 0.3s ease;
 }
 
 .navbar .btn-outline-success:hover {
@@ -178,6 +198,8 @@ background: #4f46e5;
 border-color: #4f46e5;
 
 color: white;
+
+transform: translateY(-2px);
 }
 
 /* =========================
@@ -212,7 +234,7 @@ background: linear-gradient(
 #6d28d9
 );
 
-transform: translateY(-2px);
+transform: translateY(-3px);
 
 box-shadow:
 0 9px 22px rgba(79, 70, 229, 0.35);
@@ -225,6 +247,8 @@ COURSE INTRO SECTION
 .container.mt-5:first-of-type {
 padding-top: 30px;
 padding-bottom: 25px;
+
+animation: sectionAppear 0.8s ease-out;
 }
 
 /* Main Heading */
@@ -239,11 +263,7 @@ font-weight: 800;
 line-height: 1.2;
 
 margin-bottom: 20px;
-}
 
-/* Heading Gradient */
-
-.container.mt-5:first-of-type h1 {
 background: linear-gradient(
 135deg,
 #4f46e5,
@@ -252,6 +272,8 @@ background: linear-gradient(
 
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+
+animation: headingAppear 0.8s ease-out;
 }
 
 /* Course Description */
@@ -266,6 +288,8 @@ line-height: 1.8;
 max-width: 570px;
 
 margin-bottom: 25px;
+
+animation: fadeLeft 0.9s ease-out;
 }
 
 /* =========================
@@ -285,10 +309,12 @@ box-shadow:
 0 12px 35px rgba(31, 41, 75, 0.10) !important;
 
 transition: all 0.35s ease;
+
+animation: fadeRight 0.9s ease-out;
 }
 
 .container.mt-5:first-of-type .card:hover {
-transform: translateY(-6px);
+transform: translateY(-7px);
 
 box-shadow:
 0 18px 40px rgba(79, 70, 229, 0.15) !important;
@@ -308,6 +334,14 @@ background: linear-gradient(
 #4f46e5,
 #7c3aed
 );
+
+transform: scaleX(0.7);
+
+transition: transform 0.4s ease;
+}
+
+.container.mt-5:first-of-type .card:hover::before {
+transform: scaleX(1);
 }
 
 /* Card Body */
@@ -334,6 +368,7 @@ LIST GROUP
 
 .list-group {
 border-radius: 12px;
+
 overflow: hidden;
 }
 
@@ -365,7 +400,7 @@ color: #4f46e5;
 padding-left: 22px;
 }
 
-/* Add check icon style using first letter decoration */
+/* Check Icon */
 
 .list-group-item::before {
 content: "✓";
@@ -375,6 +410,14 @@ color: #6366f1;
 font-weight: 800;
 
 margin-right: 10px;
+
+transition: all 0.25s ease;
+}
+
+.list-group-item:hover::before {
+color: #7c3aed;
+
+transform: scale(1.15);
 }
 
 /* =========================
@@ -383,6 +426,8 @@ COURSE DETAILS
 
 .container.mt-5:nth-of-type(2) {
 padding-top: 20px;
+
+animation: fadeUp 0.9s ease-out;
 }
 
 /* Heading */
@@ -417,6 +462,8 @@ background: white;
 overflow: hidden;
 
 transition: all 0.35s ease;
+
+animation: cardAppear 0.8s ease-out;
 }
 
 .container.mt-5:nth-of-type(2) .card:hover {
@@ -440,6 +487,14 @@ background: linear-gradient(
 #4f46e5,
 #7c3aed
 );
+
+transform: scaleX(0.7);
+
+transition: transform 0.35s ease;
+}
+
+.container.mt-5:nth-of-type(2) .card:hover::before {
+transform: scaleX(1);
 }
 
 /* Details Card Body */
@@ -458,6 +513,12 @@ font-weight: 750;
 font-size: 20px;
 
 margin-bottom: 12px;
+
+transition: color 0.3s ease;
+}
+
+.container.mt-5:nth-of-type(2) .card:hover .card-title {
+color: #7c3aed;
 }
 
 /* Detail Text */
@@ -490,6 +551,17 @@ linear-gradient(
 
 box-shadow:
 0 12px 35px rgba(79, 70, 229, 0.08) !important;
+
+transition: all 0.4s ease;
+
+animation: fadeUp 1s ease-out;
+}
+
+.container.text-center.mt-5.mb-5 .card:hover {
+transform: translateY(-5px);
+
+box-shadow:
+0 18px 40px rgba(79, 70, 229, 0.14) !important;
 }
 
 .container.text-center.mt-5.mb-5 .card-body {
@@ -531,6 +603,8 @@ linear-gradient(
 ) !important;
 
 border-top: 4px solid #6d5dfc;
+
+animation: footerAppear 1s ease-out;
 }
 
 footer h5 {
@@ -552,6 +626,152 @@ color: #aeb3d0;
 }
 
 /* =========================
+ANIMATIONS
+========================= */
+
+/* Navbar Animation */
+
+@keyframes navbarSlide {
+
+from {
+opacity: 0;
+transform: translateY(-25px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* Main Heading */
+
+@keyframes headingAppear {
+
+from {
+opacity: 0;
+transform: translateY(-25px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* Left Animation */
+
+@keyframes fadeLeft {
+
+from {
+opacity: 0;
+transform: translateX(-35px);
+}
+
+to {
+opacity: 1;
+transform: translateX(0);
+}
+
+}
+
+/* Right Animation */
+
+@keyframes fadeRight {
+
+from {
+opacity: 0;
+transform: translateX(35px);
+}
+
+to {
+opacity: 1;
+transform: translateX(0);
+}
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp {
+
+from {
+opacity: 0;
+transform: translateY(25px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* Section */
+
+@keyframes sectionAppear {
+
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* Cards */
+
+@keyframes cardAppear {
+
+from {
+opacity: 0;
+transform: translateY(25px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* Dropdown */
+
+@keyframes dropdownAnimation {
+
+from {
+opacity: 0;
+transform: translateY(-8px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* Footer */
+
+@keyframes footerAppear {
+
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+
+}
+
+/* =========================
 RESPONSIVE - TABLET
 ========================= */
 
@@ -563,12 +783,20 @@ padding: 12px 20px;
 
 .navbar-nav {
 margin-left: 0;
+
+```
 margin-top: 15px;
+```
+
 }
 
 .navbar form {
 margin-top: 10px;
+
+```
 margin-bottom: 10px;
+```
+
 }
 
 .navbar .btn-primary {
@@ -593,7 +821,11 @@ text-align: center;
 
 .container.mt-5:first-of-type .lead {
 margin-left: auto;
+
+```
 margin-right: auto;
+```
+
 }
 
 .container.mt-5:first-of-type .btn {
@@ -653,4 +885,27 @@ TEXT SELECTION
 ::selection {
 background: #6366f1;
 color: white;
+}
+
+/* =========================
+REDUCE MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+
+```
+animation-iteration-count: 1 !important;
+
+transition-duration: 0.01ms !important;
+
+scroll-behavior: auto !important;
+```
+
+}
+
 }
